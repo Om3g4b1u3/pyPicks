@@ -34,9 +34,8 @@ class PyPicksApp:
 		self.resetBtn.pack(side=LEFT)
 		self.quitBtn = Button(self.btnBar, text="QUIT", width=12, font="Impact 28", command=master.quit)
 		self.quitBtn.pack(side=LEFT)
-		self.btnBar.pack()
-
-
+		self.btnBar.pack()4
+	
 	def getEntries(self):
 		tempList = list()
 		entryFile = open('classRoster.txt')
@@ -44,9 +43,7 @@ class PyPicksApp:
 			entry = entry.replace('\n', ' ').replace('\r', '')
 			tempList.append(entry)
 		return tempList
-
-	#Use self.totalLeft.set() to change the number on the GUI
-	#Use self.currentEntry.set() to change the number on the GUI
+	
 	def getNext(self):
 		#self.currentEntry.set("omegaBlue")
 		#self.totalLeft.set(909)
@@ -57,16 +54,12 @@ class PyPicksApp:
 			tempStr = self.entries.pop(randint(0,(len(self.entries)-1)))
 			self.currentEntry.set(tempStr)
 			self.totalLeft.set(len(self.entries))
-		
-			
-	def reset(self):
-		#self.currentEntry.set("PRESS NEXT")
-		#self.totalLeft.set(3.14)
-				
+	
+	def reset(self):	
 		self.entries = self.getEntries()
 		self.totalLeft.set(len(self.entries))
 		self.getNext()
-		
+	
 
 root = Tk()
 myGUI = PyPicksApp(root)
