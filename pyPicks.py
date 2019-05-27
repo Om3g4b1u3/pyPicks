@@ -45,12 +45,7 @@ class PyPicksApp:
 			tempList.append(entry)
 		return tempList
 
-	#Use self.totalLeft.set() to change the number on the GUI
-	#Use self.currentEntry.set() to change the number on the GUI
 	def getNext(self):
-		#self.currentEntry.set("omegaBlue")
-		#self.totalLeft.set(909)
-		
 		if len(self.entries)==0:
 			self.reset()
 		else:
@@ -59,10 +54,7 @@ class PyPicksApp:
 			self.totalLeft.set(len(self.entries))
 		
 			
-	def reset(self):
-		#self.currentEntry.set("PRESS NEXT")
-		#self.totalLeft.set(3.14)
-				
+	def reset(self):		
 		self.entries = self.getEntries()
 		self.totalLeft.set(len(self.entries))
 		self.getNext()
