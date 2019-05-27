@@ -52,7 +52,6 @@ class PyPicksApp:
 			tempStr = self.entries.pop(randint(0,(len(self.entries)-1)))
 			self.currentEntry.set(tempStr)
 			self.totalLeft.set(len(self.entries))
-		
 			
 	def reset(self):		
 		self.entries = self.getEntries()
