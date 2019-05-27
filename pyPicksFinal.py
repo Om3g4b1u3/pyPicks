@@ -66,7 +66,7 @@ class PyPicksApp:
 	'''
 		Part 3:		Writing & Calling Functions
 		Objectives:	A) Rewrite the function to re-initialize "entries" by calling call getEntries()
-					B) Call getNext() to restart the list
+				B) Call getNext() to restart the list
 		Warnings:	Yes, a third time, stay within "YOUR CODE HERE" Comments
 	'''
 	def reset(self):
