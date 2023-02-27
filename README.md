@@ -1,4 +1,4 @@
-# pyPicks
+### pyPicks
 <hr>
 This was a simple program I wrote to test my Intro to Programming students. The file used for the final is labeled with the obvious format.
 
